@@ -1,0 +1,45 @@
+#precio de productos 
+PRECIO_COMPUTADDOR_ESCRITORIO = 800
+PRECIO_COMPUTADOR_MESA = 600
+PRECIO_TABLETA = 400
+PRECIO_VIDEOBEAM = 1000
+PRECIO_TELEVISOR = 1200
+
+#cantidad iniacial de productos
+cantidad_computadores_escritorios = 0 
+cantidad_computadores_mesa = 0
+cantidad_tabletas = 0
+cantidad_videobeam = 0
+cantidad_televisor = 0
+
+while True: 
+    print("\nPRODUCTOS DISPONIBLES:")
+    print("1. computador de escritorio")
+    print("2. computador de mesa")
+    print("3. Tableta")
+    print("4. Videobeam")
+    print("5. Televisor")
+    print(6. "Facturar")
+    opcion = int(input("seleccionar una opcion. "))
+
+    if opcion == 1:
+        cantidad_computadores_escritorios += 1
+    elif opcion == 2:
+        cantidad_computadores_mesa += 1
+    elif opcion == 3:
+        cantidad_tabletas += 1
+    elif opcion == 4:
+        cantidad_videobeam +=1
+    elif opcion == 5:
+        cantidad_televisor +=1 
+    elif opcion == 6:
+        total_pagar = (cantidad_computadores_escritorios * PRECIO_COMPUTADDOR_ESCRITORIO + cantidad_computadores_mesa * PRECIO_COMPUTADOR_MESA + cantidad_tabletas * PRECIO_TABLETA + cantidad_videobeam * PRECIO_VIDEOBEAM + cantidad_televisor * PRECIO_TELEVISOR)
+    print("\nRESUMEN DE COMPRA:")
+    print("computadores de escritorio:" , cantidad_computadores_escritorios)
+    print("compuadores de mesa:" , cantidad_computadores_mesa)
+    print("tabletas:" , cantidad_tabletas)
+    print("vedeobeams:" , cantidad_videobeam)
+    print("televisores:" , cantidad_televisor)
+    print("Total a pagar:" , total_pagar)
+    break 
+
